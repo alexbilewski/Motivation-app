@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.motivationcard.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/x"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/imgDescription"/>
+    <TextView
+        android:id="@+id/q1"
+        android:text="@string/quote1"
+        style="@style/MainText"/>
+    <TextView
+        android:text="@string/sign"
+        style="@style/SubText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@style/Button"
+        android:background="@android:drawable/ic_menu_share"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
